@@ -1,8 +1,10 @@
 require 'httparty'
 require 'json'
+require_relative 'roadmap'
 
 class Kele
   include HTTParty
+  include Roadmap
   base_uri 'https://www.bloc.io/api/v1'
   
   def initialize(email, password)
@@ -27,4 +29,5 @@ class Kele
     raise 'Unable to get mentor availability' if response.code != 200
     @mentor_availability = JSON.parse(response.body)
   end
+  
 end
