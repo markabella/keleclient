@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'rest-client'
 require_relative 'roadmap'
 require_relative 'messages'
 

@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rails_12factor'
 gem 'httparty'
 gem 'json'
+gem 'rest-client'
 
 
 # Use CoffeeScript for .coffee assets and views
