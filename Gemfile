@@ -20,6 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'rails_12factor'
 gem 'httparty'
+gem 'json'
 
 
 # Use CoffeeScript for .coffee assets and views
