@@ -3,11 +3,13 @@ require 'json'
 require 'rest-client'
 require_relative 'roadmap'
 require_relative 'messages'
+require_relative 'submission'
 
 class Kele
   include HTTParty
   include Roadmap
   include Messages
+  include Submission
   base_uri 'https://www.bloc.io/api/v1'
   
   def initialize(email, password)
